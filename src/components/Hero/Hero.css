@@ -1,0 +1,31 @@
+.hero { 
+    text-align: center;
+    padding: 60px 20px; 
+    background-image: url('/src/assets/images/Hero-Background.jpeg');
+    background-size: cover;         /* Ensures it covers the entire area */
+    background-repeat: no-repeat;   /* Prevents tiling */
+    background-position: center;    /* Centers the image */
+    font-family: 'Dancing Script';
+}
+
+.hero h1 {
+    font-size: 6rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #d85b82;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s, color 0.3s;
+    font-family: 'Dancing Script';
+}
+
+.hero button:hover {
+    background-color: #ffdfe9;
+    color: black;
+    border: none;
+}

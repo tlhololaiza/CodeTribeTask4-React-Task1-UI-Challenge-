@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+
+.category-card {
+    background: #fff; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    text-align: center; 
+    width: 280px;
+    font-family: 'Dancing Script';
+    padding-bottom: 10px;
+}
+
+.category-card img { 
+    width: 100%; 
+    border-radius: 8px;
+    height: 200px; 
+}
+
+.category-card button { 
+    background-color: #ffdfe9;
+    color: black;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s, color 0.3s;
+    font-family: 'Dancing Script';
+    width: 70%;
+}
+
+
+.category-card button:hover {
+    background-color: #d85b82;
+    color: white;
+    border: 2px solid #ffdfe9;
+}
