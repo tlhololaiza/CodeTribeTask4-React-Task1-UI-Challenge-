@@ -29,3 +29,61 @@
     color: black;
     border: none;
 }
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 5rem;
+    }
+    .hero {
+        padding: 50px 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+    .hero {
+        padding: 40px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero {
+        padding: 30px 8px;
+    }
+    .hero button {
+        padding: 7px 14px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero {
+        padding: 20px 4px;
+    }
+    .hero button {
+        padding: 6px 12px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero h1 {
+        font-size: 1.2rem;
+    }
+    .hero {
+        padding: 10px 2px;
+    }
+    .hero button {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+}
