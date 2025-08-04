@@ -1,8 +1,8 @@
 import './Footer.css';
-import pic_1 from '../../assets/images/footer_cupcakes.jpeg';
-import pic_2 from '../../assets/icons/facebook.png';
-import pic_3 from '../../assets/icons/instagram.png';
-import pic_4 from '../../assets/icons/pinterest.png';
+import picture_1 from '../../assets/images/footer_cupcakes.jpeg';
+import picture_2 from '../../assets/icons/facebook.png';
+import picture_3 from '../../assets/icons/instagram.png';
+import picture_4 from '../../assets/icons/pinterest.png';
 
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
 
         {/* Left Section - Image */}
         <div className="footer-section footer-image">
-          <img src={pic_1} alt="Cupcakes"/>
+          <img src={picture_1} alt="Cupcakes"/>
         </div>
 
         {/* Middle Section - Info */}
@@ -30,9 +30,9 @@ const Footer = () => {
         <div className="footer-section footer-social">
           <h4>Follow Us</h4>
           <div className="social-icons">
-            <a href="#"><img src={pic_2} id="icon"/></a>
-            <a href="#"><img src={pic_3} id="icon"/></a>
-            <a href="#"><img src={pic_4} id="icon"/></a>
+            <a href="#"><img src={picture_2} id="icon"/></a>
+            <a href="#"><img src={picture_3} id="icon"/></a>
+            <a href="#"><img src={picture_4} id="icon"/></a>
           </div>
         </div>
       </div>
