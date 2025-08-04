@@ -60,105 +60,98 @@ nav h2 {
 @media (max-width: 1200px) {
     nav h2 {
         margin-right: 120px;
+        font-size: 2.2rem;
+    }
+    .oder-btn {
+        padding: 7px 14px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav {
+        height: 50px;
+    }
+    nav h2 {
+        margin-right: 60px;
         font-size: 2rem;
     }
     .links {
         gap: 8px;
     }
     .oder-btn {
-        padding: 7px 14px;
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    nav {
-        height: 54px;
-        font-size: 1.1rem;
-    }
-    nav h2 {
-        margin-right: 80px;
-        font-size: 1.7rem;
-    }
-    .links {
-        gap: 6px;
-    }
-    .oder-btn {
         padding: 6px 12px;
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 768px) {
     nav {
-        height: 48px;
-        font-size: 1rem;
-        justify-content: space-between;
-        padding: 0 10px;
+        height: 45px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 8px 10px;
     }
     nav h2 {
-        margin-right: 20px;
-        font-size: 1.3rem;
+        margin-right: 0;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
     }
     .links {
-        gap: 4px;
-    }
-    .link {
-        padding: 4px 8px;
-        font-size: 0.95rem;
+        gap: 6px;
     }
     .oder-btn {
         padding: 5px 10px;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
 }
 
 @media (max-width: 480px) {
     nav {
-        height: 42px;
-        font-size: 0.95rem;
+        height: auto;
         flex-direction: column;
         align-items: flex-start;
-        padding: 0 6px;
+        padding: 6px 6px;
     }
     nav h2 {
-        margin-right: 0;
+        font-size: 1.2rem;
         margin-bottom: 4px;
-        font-size: 1.1rem;
     }
     .links {
-        gap: 2px;
+        gap: 4px;
         flex-wrap: wrap;
     }
     .link {
-        padding: 3px 6px;
-        font-size: 0.9rem;
+        padding: 4px 8px;
+        font-size: 0.95rem;
     }
     .oder-btn {
         padding: 4px 8px;
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 320px) {
     nav {
-        height: 38px;
-        font-size: 0.85rem;
-        padding: 0 2px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2px 2px;
     }
     nav h2 {
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-bottom: 2px;
     }
     .links {
-        gap: 1px;
+        gap: 2px;
     }
     .link {
         padding: 2px 4px;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
     .oder-btn {
-        padding: 3px 6px;
+        padding: 2px 4px;
         font-size: 0.8rem;
     }
 }

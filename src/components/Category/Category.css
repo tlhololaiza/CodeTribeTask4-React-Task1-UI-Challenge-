@@ -34,3 +34,69 @@
     color: white;
     border: 2px solid #ffdfe9;
 }
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .category-card {
+        width: 240px;
+    }
+    .category-card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .category-card {
+        width: 200px;
+    }
+    .category-card img {
+        height: 150px;
+    }
+    .category-card button {
+        padding: 7px 14px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-card {
+        width: 160px;
+    }
+    .category-card img {
+        height: 110px;
+    }
+    .category-card button {
+        padding: 6px 12px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .category-card img {
+        height: 90px;
+    }
+    .category-card button {
+        padding: 5px 10px;
+        font-size: 0.95rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 320px) {
+    .category-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .category-card img {
+        height: 60px;
+    }
+    .category-card button {
+        padding: 4px 8px;
+        font-size: 0.85rem;
+        width: 100%;
+    }
+}

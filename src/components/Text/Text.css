@@ -2,4 +2,42 @@
 
 .text p{
     text-align: center;
+    font-size: 1.5rem;
+    padding: 0 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .text p {
+        font-size: 1.3rem;
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .text p {
+        font-size: 1.1rem;
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text p {
+        font-size: 1rem;
+        padding: 0 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text p {
+        font-size: 0.95rem;
+        padding: 0 4px;
+    }
+}
+
+@media (max-width: 320px) {
+    .text p {
+        font-size: 0.85rem;
+        padding: 0 2px;
+    }
 }
