@@ -18,20 +18,20 @@ function App() {
     <>
       <Header/>
       <Hero/>
-      <Text desc = "Delight in every Bite!" font="'Dancing Script', cursive" color="black" size="3rem" />
+      <Text desc = "Delight in every Bite!" font="'Dancing Script', cursive" color="#2c1810" size="3rem" />
 
       <Categories>
-        <Category title="Custom Cakes" image={pic_5} desc="Handmade and delicious cakes for any occasion." />
-        <Category title="Macarons" image={pic_6} desc="Colorful, delicate, and sweet macarons you'll love." />
-        <Category title="Cupcakes" image={pic_7} desc="Perfect cupcakes topped with creamy frosting." />
+        <Category title="Custom Cakes" image={pic_5} desc="Exquisite handcrafted sweets to make moments memorable." buttonText="VIEW CATALOG" />
+        <Category title="Macarons" image={pic_6} desc="Delicate shells, rich fillings — a Parisian classic." buttonText="VIEW CATALOG" />
+        <Category title="Cupcake Collections" image={pic_7} desc="Playful flavors topped with our signature swirls." buttonText="ORDER TODAY" />
       </Categories>
       
-      <Text desc = "~Cupcake Collection!~" font="'Dancing Script', cursive" color="gold" size="3rem" />
+      <Text desc = "~ Culinary Collection ~" font="'Dancing Script', cursive" color="#c9a961" size="2.4rem" />
 
       <Categories>
-        <Category title="-20% OFF" image={pic_8} desc="" />
-        <Category title="" image={pic_9} desc="" />
-        <Category title="Holiday Collection" image={pic_10} desc="Cakes for the holiday" />
+        <Category title="Holiday" image={pic_8} desc="- 20% OFF" buttonText="ORDER TODAY" isPromo />
+        <Category title="Cupcakes" image={pic_9} desc="Seasonal delights" buttonText="ORDER TODAY" />
+        <Category title="Holiday Collection" image={pic_10} desc="A sparkle for every table" buttonText="ORDER NOW" isPromo />
       </Categories>
       
       <Footer/>
