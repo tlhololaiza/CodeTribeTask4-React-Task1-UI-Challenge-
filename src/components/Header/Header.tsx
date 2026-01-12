@@ -1,4 +1,5 @@
 import './Header.css'
+import cartIcon from '../../assets/icons/white-cart.png'
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
       </div>
 
       <div className="actions">
-        <span className="cart" aria-label="Cart" role="img">🛒</span>
+        <img src={cartIcon} alt="Cart" className="cart" />
         <button className="order-btn">ORDER ONLINE NOW</button>
       </div>
     </nav>
