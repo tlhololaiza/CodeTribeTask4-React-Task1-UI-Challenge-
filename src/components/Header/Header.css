@@ -1,157 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
-
-nav{
+.nav {
     position: fixed;
     top: 0;
-    height: 60px;
-    width: 100%;
-    background-color: #ffdfe9;
-    color: black;
-    margin: auto;
+    left: 0;
+    right: 0;
+    height: 72px;
+    padding: 0 48px;
+    background-color: #f6dfe6;
+    color: #2c1810;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-family: 'Dancing Script'
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid #e6cbd4;
+    z-index: 100;
 }
 
-nav h2 {
-    margin-right: 200px; /* Creates space between h2 and links */
+.brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
 }
 
-
-.links{
+.links {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 24px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
 }
 
-.link{
+.link {
     text-decoration: none;
-    color: black;
-    padding: 5px 10px;
+    color: #2c1810;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 6px 0;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    background: #b05b76;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.link:hover::after {
+    opacity: 1;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    white-space: nowrap;
+}
+
+.cart {
+    font-size: 1.2rem;
+}
+
+.order-btn {
+    background-color: #fff;
+    color: #2c1810;
+    border: 1px solid #2c1810;
+    padding: 10px 18px;
+    font-weight: 700;
     cursor: pointer;
+    border-radius: 0;
+    letter-spacing: 0.5px;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
-.link:hover{
-    color: #d85b82;
-}
-
-
-.oder-btn {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    padding: 8px 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 0; /* Sharp edges */
-    transition: background 0.3s, color 0.3s;
-    font-family: 'Dancing Script'
-}
-
-.oder-btn:hover {
-    background-color: #d85b82;
-    color: white;
-    border: 2px solid #ffdfe9;
+.order-btn:hover {
+    background-color: #b05b76;
+    color: #fff;
+    border-color: #b05b76;
 }
 
 /* Responsive styles */
-@media (max-width: 1200px) {
-    nav h2 {
-        margin-right: 120px;
-        font-size: 2.2rem;
+@media (max-width: 1050px) {
+    .nav {
+        padding: 0 28px;
+        gap: 12px;
     }
-    .oder-btn {
-        padding: 7px 14px;
-        font-size: 1.1rem;
+    .links {
+        gap: 16px;
     }
 }
 
-@media (max-width: 1024px) {
-    nav {
-        height: 50px;
+@media (max-width: 820px) {
+    .nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px 20px;
+        row-gap: 10px;
     }
-    nav h2 {
-        margin-right: 60px;
-        font-size: 2rem;
-    }
-    .links {
-        gap: 8px;
-    }
-    .oder-btn {
-        padding: 6px 12px;
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    nav {
-        height: 45px;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 8px 10px;
-    }
-    nav h2 {
-        margin-right: 0;
-        font-size: 1.5rem;
-        margin-bottom: 5px;
+    .brand {
+        width: 100%;
+        text-align: center;
     }
     .links {
-        gap: 6px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
     }
-    .oder-btn {
-        padding: 5px 10px;
-        font-size: 0.95rem;
+    .actions {
+        width: 100%;
+        justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
-    nav {
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 6px 6px;
-    }
-    nav h2 {
-        font-size: 1.2rem;
-        margin-bottom: 4px;
-    }
-    .links {
-        gap: 4px;
-        flex-wrap: wrap;
-    }
-    .link {
-        padding: 4px 8px;
-        font-size: 0.95rem;
-    }
-    .oder-btn {
-        padding: 4px 8px;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 320px) {
-    nav {
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 2px 2px;
-    }
-    nav h2 {
-        font-size: 1rem;
-        margin-bottom: 2px;
-    }
-    .links {
-        gap: 2px;
-    }
-    .link {
-        padding: 2px 4px;
-        font-size: 0.85rem;
-    }
-    .oder-btn {
-        padding: 2px 4px;
-        font-size: 0.8rem;
+    .order-btn {
+        width: 100%;
+        text-align: center;
     }
 }
