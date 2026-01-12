@@ -9,31 +9,43 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-
-        {/* Left Section - Image */}
-        <div className="footer-section footer-image">
-          <img src={pic_1} alt="Cupcakes"/>
+        {/* Left: image */}
+        <div className="footer-col footer-image">
+          <img src={pic_1} alt="Cupcakes" />
         </div>
 
-        {/* Middle Section - Info */}
-        <div className="footer-section footer-info">
-          <h4>Join</h4>
-          <p>Subscribe for sweet rewards & updates on new flavors</p>
-          
-          <div className="info-links">
-            <p>Email: hello@patisserie.com</p>
-            <p>Call: +123 456 7890</p>
+        {/* Middle: hearts + small info */}
+        <div className="footer-col footer-info">
+          <h4 className="footer-script">Join</h4>
+          <p className="footer-sub">sweet couture flavors & traditional delicate fine</p>
+          <div className="hearts" aria-hidden>
+            <span>❤</span>
+            <span>♡</span>
+            <span>❤</span>
+          </div>
+          <div className="info-points">
+            <div className="point">
+              <span className="point-heart">❤</span>
+              <p>Special cupcakes</p>
+              <small>small flavors</small>
+            </div>
+            <div className="point">
+              <span className="point-heart">❤</span>
+              <p>Chocolate ones</p>
+              <small>love deluxe</small>
+            </div>
           </div>
         </div>
 
-        {/* Right Section - Social Links */}
-        <div className="footer-section footer-social">
-          <h4>Follow Us</h4>
+        {/* Right: social icons */}
+        <div className="footer-col footer-social">
+          <h4 className="footer-script">Follow Us Here</h4>
           <div className="social-icons">
-            <a href="#"><img src={pic_2} id="icon"/></a>
-            <a href="#"><img src={pic_3} id="icon"/></a>
-            <a href="#"><img src={pic_4} id="icon"/></a>
+            <a href="#" className="social-pill" aria-label="Facebook"><img src={pic_2} alt="Facebook" /></a>
+            <a href="#" className="social-pill" aria-label="Instagram"><img src={pic_3} alt="Instagram" /></a>
+            <a href="#" className="social-pill" aria-label="Pinterest"><img src={pic_4} alt="Pinterest" /></a>
           </div>
+          <p className="social-caption">sweetness lives in one conversation</p>
         </div>
       </div>
     </footer>
