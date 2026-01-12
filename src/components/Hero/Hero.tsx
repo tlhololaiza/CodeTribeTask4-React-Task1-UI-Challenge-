@@ -3,12 +3,11 @@ import './Hero.css';
 const Hero = () => {
   return (
     <section className="hero">
+      <div className="hero-logo">🏵️</div>
       <h1>Delight in</h1>
-      <p>Patilcu in every bite!</p>
-      <button className="hero-btn">Order Now</button>
-
+      <p className="hero-sub">PATISSERIE IN EVERY BITE!</p>
+      <button className="hero-btn">ORDER NOW</button>
     </section>
-    
   )
 }
 
