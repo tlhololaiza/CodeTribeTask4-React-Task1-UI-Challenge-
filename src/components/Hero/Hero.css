@@ -10,8 +10,10 @@
 }
 
 .hero-logo{
-    font-size: 3rem;
-    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+    display: block;
 }
 
 .hero h1 {
