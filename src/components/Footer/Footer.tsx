@@ -3,6 +3,7 @@ import pic_1 from '../../assets/images/footer_cupcakes.jpeg';
 import pic_2 from '../../assets/icons/facebook.png';
 import pic_3 from '../../assets/icons/instagram.png';
 import pic_4 from '../../assets/icons/pinterest.png';
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 
 
 const Footer = () => {
@@ -19,18 +20,18 @@ const Footer = () => {
           <h4 className="footer-script">Join</h4>
           <p className="footer-sub">sweet couture flavors & traditional delicate fine</p>
           <div className="hearts" aria-hidden>
-            <span>❤</span>
-            <span>♡</span>
-            <span>❤</span>
+            <AiFillHeart />
+            <AiOutlineHeart />
+            <AiFillHeart />
           </div>
           <div className="info-points">
             <div className="point">
-              <span className="point-heart">❤</span>
+              <AiFillHeart className="point-heart" />
               <p>Special cupcakes</p>
               <small>small flavors</small>
             </div>
             <div className="point">
-              <span className="point-heart">❤</span>
+              <AiFillHeart className="point-heart" />
               <p>Chocolate ones</p>
               <small>love deluxe</small>
             </div>

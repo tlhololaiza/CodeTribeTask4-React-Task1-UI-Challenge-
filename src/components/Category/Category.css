@@ -43,13 +43,11 @@
 
 .category-card button:hover { background-color: #b56d82; }
 
-/* Promo variant */
 .promo-card .card-content { background: linear-gradient(135deg, #f8d7e0 0%, #e8c1d0 100%); }
 .promo-card h3 { font-size: 2.4rem; margin: 14px 0; }
 .promo-card p { font-size: 1.6rem; font-weight: 700; color: #2c1810; min-height: auto; }
 .promo-card button { background: #8b3a5a; }
 
-/* Responsive styles */
 @media (max-width: 1200px) {
     .category-card { width: 280px; }
     .category-card img { height: 200px; }

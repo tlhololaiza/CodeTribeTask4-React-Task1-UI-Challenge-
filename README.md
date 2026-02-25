@@ -1,69 +1,52 @@
-# React + TypeScript + Vite
+## About this project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is a small UI challenge for a fictional cake shop. It demonstrates a responsive landing page built with React + TypeScript and bundled with Vite. The app includes reusable components such as `Header`, `Hero`, `Categories`, `Category`, `Text`, and `Footer`, and uses plain CSS files in `src/components/*` for styling. Static assets (images and icons) live in `src/assets`, and the footer uses `react-icons` for vector icons.
 
-Currently, two official plugins are available:
+Tech used:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 19
+- TypeScript
+- Vite
+- react-icons
+- ESLint (dev)
 
-## Expanding the ESLint configuration
+## How to run
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+From the project root run these commands in PowerShell or bash.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Install dependencies (already run if you followed earlier steps):
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install `react-icons` (used by `src/components/Footer/Footer.tsx`):
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install react-icons
 ```
+
+3. Start the development server with Vite:
+
+```bash
+npm run dev
+```
+
+Open the URL printed by Vite (usually http://localhost:5173) in your browser.
+
+4. Build for production:
+
+```bash
+npm run build
+```
+
+5. Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+Notes:
+- The project uses React + TypeScript with Vite.
+- `react-icons` is required for the footer icons; if you remove or change that component, you can omit the package.
+- If you run into type issues when building, ensure `typescript` and the `@types/*` packages listed in `package.json` are installed.
